@@ -1,0 +1,267 @@
+.app_table {
+  /*border: 1px solid red;*/
+  padding: 5px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 350px;
+  max-width: 1500px;
+  width: auto;
+  min-height: 900px;
+  height: auto;
+}
+
+.app_table2 {
+  border: 1px solid red;
+}
+
+.main_table {
+  display: table;
+  width: 100%;
+  height: 800px;
+  /*border: 1px solid red;*/
+  text-align: center;
+  margin: auto;
+}
+
+.main_table .main_row {
+  display: table-row;
+}
+
+.main_table .main_row .main_cell {
+  display: table-cell;
+  height: 80%;
+  border: 1px solid #CCC;
+  vertical-align: middle;
+}
+
+.game_table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #CCC;*/
+  text-align: center;
+  margin: auto;
+}
+
+.game_table .game_row {
+  display: table-row;
+}
+
+.game_table .game_row .game_cell {
+  display: table-cell;
+  width: 55%;
+  border: 1px solid #CCC;
+  vertical-align: middle;
+}
+
+.right_hints_table {
+  display: table;
+  padding-bottom: 10%;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #CCC;*/
+  text-align: center;
+  margin: auto;
+}
+
+.right_hints_table .right_hints_row {
+  display: table-row;
+}
+
+.right_hints_table .right_hints_row .right_hints_cell {
+  display: table-cell;
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+  /* /*border: 1px solid #CCC;*/ */
+  vertical-align: middle;
+}
+
+.right_hints_column_table {
+  display: table;
+  /* padding-left: 5px;
+  padding-right: 5px; */
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #CCC;*/
+  text-align: center;
+  margin: auto;
+}
+
+.right_hints_column_table .right_hints_column_row {
+  display: table-row;
+}
+
+.right_hints_column_table .right_hints_column_row .right_hints_column_cell {
+  display: table-cell;
+  border: 1px solid #CCC;
+  vertical-align: middle;
+}
+
+.main_action {
+  display: table;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #CCC;*/
+  text-align: center;
+  margin: auto;
+}
+
+.main_action .main_action_row {
+  display: table-row;
+}
+
+.main_action .main_action_row .main_action_cell {
+  display: table-cell;
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+  /*border: 1px solid #CCC;*/
+  vertical-align: middle;
+}
+
+.bottom_hints_table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #CCC;*/
+  text-align: center;
+  margin: auto;
+}
+
+.bottom_hints_table .bottom_hints_row {
+  display: table-row;
+}
+
+.bottom_hints_table .bottom_hints_row .bottom_hints_cell {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid #CCC;
+  vertical-align: middle;
+}
+
+.group_table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #CCC;*/
+  text-align: center;
+  margin: auto;
+}
+
+.group_table .group_row {
+  display: table-row;
+}
+
+.group_table .group_row .group_cell {
+  display: table-cell;
+  /* width: 100%;
+  height: 100%; */
+  border: 1px solid #CCC;
+  vertical-align: middle;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #CCC;*/
+  text-align: center;
+  margin: auto;
+}
+
+.table .row {
+  display: table-row;
+}
+
+.table .row .cell {
+  display: table-cell;
+  /* width: 100%;
+  height: 100%; */
+  border: 1px solid #CCC;
+  vertical-align: middle;
+}
+
+.left_game_table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #CCC;*/
+  text-align: center;
+  margin: auto;
+}
+
+.left_game_table .left_game_row {
+  display: table-row;
+}
+
+.left_game_table .left_game_row .left_game_cell {
+  display: table-cell;
+  /* width: 20px;*/
+  height: 80%;
+  /*border: 1px solid #CCC;*/
+  vertical-align: middle;
+}
+
+.menu {
+  display: table;
+  /*border-spacing: 10px;*/
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #CCC;*/
+  text-align: center;
+  margin: auto;
+}
+
+.menu .menu_row {
+  display: table-row;
+}
+
+.menu .menu_row .menu_cell {
+ display: table-cell;
+ height: 100%;
+ /*border: 1px solid #CCC;*/
+ vertical-align: middle;
+}
+
+.buttons_table {
+  display: table;
+  border-spacing: 10px;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #CCC;*/
+  text-align: center;
+  margin: auto;
+}
+
+.buttons_table .buttons_row {
+  display: table-row;
+}
+
+.buttons_table .buttons_row .buttons_cell {
+  display: table-cell;
+  width: 50%;
+  border: 1px solid #CCC;
+  vertical-align: middle;
+}
+
+.info_table {
+  display: table;
+  border-spacing: 2.5px 10px;
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid #CCC;*/
+  text-align: center;
+  margin: auto;
+}
+
+.info_table .info_row {
+  display: table-row;
+}
+
+.info_table .info_row .info_cell {
+  display: table-cell;
+  text-align: left;
+  padding-left: 5%;
+  border: 1px solid #CCC;
+  vertical-align: middle;
+}
