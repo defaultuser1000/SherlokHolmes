@@ -1,0 +1,191 @@
+{"human": {
+  "1": {
+    "icon": "images/human",
+    "color": ""
+  },
+
+  "2": {
+    "icon": "images/human",
+    "color": ""
+  },
+
+  "3": {
+    "icon": "images/human",
+    "color": ""
+  },
+
+  "4": {
+    "icon": "images/human",
+    "color": ""
+  },
+
+  "5": {
+    "icon": "images/human",
+    "color": ""
+  },
+
+  "6": {
+    "icon": "images/human",
+    "color": ""
+  }
+},
+
+"house": {
+  "1": {
+    "icon": "images/house",
+    "color": ""
+  },
+
+  "2": {
+    "icon": "images/house",
+    "color": ""
+  },
+
+  "3": {
+    "icon": "images/house",
+    "color": ""
+  },
+
+  "4": {
+    "icon": "images/house",
+    "color": ""
+  },
+
+  "5": {
+    "icon": "images/house",
+    "color": ""
+  },
+
+  "6": {
+    "icon": "images/house",
+    "color": ""
+  }
+},
+
+"animal": {
+  "1": {
+    "icon": "images/animal",
+    "color": ""
+  },
+
+  "2": {
+    "icon": "images/animal",
+    "color": ""
+  },
+
+  "3": {
+    "icon": "images/animal",
+    "color": ""
+  },
+
+  "4": {
+    "icon": "images/animal",
+    "color": ""
+  },
+
+  "5": {
+    "icon": "images/animal",
+    "color": ""
+  },
+
+  "6": {
+    "icon": "images/animal",
+    "color": ""
+  }
+},
+
+"cigarete": {
+  "1": {
+    "icon": "images/cigarete",
+    "color": ""
+  },
+
+  "2": {
+    "icon": "images/cigarete",
+    "color": ""
+  },
+
+  "3": {
+    "icon": "images/cigarete",
+    "color": ""
+  },
+
+  "4": {
+    "icon": "images/cigarete",
+    "color": ""
+  },
+
+  "5": {
+    "icon": "images/cigarete",
+    "color": ""
+  },
+
+  "6": {
+    "icon": "images/cigarete",
+    "color": ""
+  }
+},
+
+"fruit": {
+  "1": {
+    "icon": "images/fruit",
+    "color": ""
+  },
+
+  "2": {
+    "icon": "images/fruit",
+    "color": ""
+  },
+
+  "3": {
+    "icon": "images/fruit",
+    "color": ""
+  },
+
+  "4": {
+    "icon": "images/fruit",
+    "color": ""
+  },
+
+  "5": {
+    "icon": "images/fruit",
+    "color": ""
+  },
+
+  "6": {
+    "icon": "images/fruit",
+    "color": ""
+  }
+},
+
+"alphabet": {
+  "1": {
+    "icon": "images/alphabet",
+    "color": ""
+  },
+
+  "2": {
+    "icon": "images/alphabet",
+    "color": ""
+  },
+
+  "3": {
+    "icon": "images/alphabet",
+    "color": ""
+  },
+
+  "4": {
+    "icon": "images/alphabet",
+    "color": ""
+  },
+
+  "5": {
+    "icon": "images/alphabet",
+    "color": ""
+  },
+
+  "6": {
+    "icon": "images/alphabet",
+    "color": ""
+  }
+}}

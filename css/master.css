@@ -1,14 +1,19 @@
+.game_name {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
 .app_table {
   /*border: 1px solid red;*/
   padding: 5px;
-  margin-top: 50px;
+  margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
   min-width: 350px;
   max-width: 1500px;
   width: auto;
-  min-height: 900px;
-  height: auto;
+  height: 660px;
 }
 
 .app_table2 {
@@ -18,7 +23,7 @@
 .main_table {
   display: table;
   width: 100%;
-  height: 800px;
+  height: 100%;
   /*border: 1px solid red;*/
   text-align: center;
   margin: auto;
@@ -242,6 +247,17 @@
   width: 50%;
   border: 1px solid #CCC;
   vertical-align: middle;
+  text-decoration: none;
+}
+
+.buttons_cell:link {
+  color: black;
+}
+.buttons_cell:hover {
+  color: black;
+}
+.buttons_cell:visited {
+  color: black;
 }
 
 .info_table {
@@ -264,4 +280,48 @@
   padding-left: 5%;
   border: 1px solid #CCC;
   vertical-align: middle;
+}
+
+.human {
+  color: white;
+  background-color: #FFA07A;
+}
+
+.house {
+  color: white;
+  background-color: #B27A9F;
+}
+
+.animal {
+  color: white;
+  background-color: #BDB76B;
+}
+
+.sign {
+  color: white;
+  background-color: #D2691E;
+}
+
+.fruit {
+  color: white;
+  background-color: #556b2f;
+}
+
+.alphabet {
+  color: white;
+  background-color: #008080;
+}
+
+img {
+  margin: auto;
+  display: block;
+  max-width:25px;
+  max-height:25px;
+  width: auto;
+  height: auto;
+}
+
+#house img {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
