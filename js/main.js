@@ -1,17 +1,3 @@
-// var json = (function() {
-//   var json = null;
-//   $.ajax({
-//     'async': false,
-//     'global': false,
-//     'url': "resources/game_table_structure.json",
-//     'dataType': "json",
-//     'success': function(data) {
-//       json = data;
-//     }
-//   });
-//   return json;
-// })();
-
 function createInterface() {
   var body = document.getElementsByTagName('body')[0];
 
@@ -28,7 +14,7 @@ function createInterface() {
     for (var b = 0; b < 1; b++) {
       var main_cell = document.createElement('div');
       main_cell.setAttribute('class', 'main_cell');
-      if (a == 0) {
+      if (a === 0) {
         var game_table = document.createElement('div');
         game_table.setAttribute('class', 'game_table');
         for (var c = 0; c < 1; c++) {
@@ -37,7 +23,7 @@ function createInterface() {
           for (var d = 0; d < 2; d++) {
             var game_cell = document.createElement('div');
             game_cell.setAttribute('class', 'game_cell');
-            if (d == 0) {
+            if (d === 0) {
               var left_game_table = document.createElement('div');
               left_game_table.setAttribute('class', 'left_game_table');
               for (var g = 0; g < 2; g++) {
@@ -46,7 +32,7 @@ function createInterface() {
                 for (var h = 0; h < 1; h++) {
                   var left_game_cell = document.createElement('div');
                   left_game_cell.setAttribute('class', 'left_game_cell');
-                  if (g == 0) {
+                  if (g === 0) {
                     var main_action = document.createElement('div');
                     main_action.setAttribute('class', 'main_action');
                     for (var i = 0; i < 1; i++) {
@@ -89,7 +75,7 @@ function createInterface() {
                       main_action.appendChild(main_action_row);
                       left_game_cell.appendChild(main_action);
                     }
-                  } else if (g == 1) {
+                  } else if (g === 1) {
                     var menu = document.createElement('div');
                     menu.setAttribute('class', 'menu');
                     for (var o = 0; o < 1; o++) {
@@ -98,7 +84,7 @@ function createInterface() {
                       for (var p = 0; p < 2; p++) {
                         var menu_cell = document.createElement('div');
                         menu_cell.setAttribute('class', 'menu_cell');
-                        if (p == 0) {
+                        if (p === 0) {
                           var buttons_table = document.createElement('div');
                           buttons_table.setAttribute('class', 'buttons_table');
                           for (var q = 0; q < 2; q++) {
@@ -116,7 +102,7 @@ function createInterface() {
                             buttons_table.appendChild(buttons_row);
                           }
                           menu_cell.appendChild(buttons_table);
-                        } else if (p == 1) {
+                        } else if (p === 1) {
                           var info_table = document.createElement('div');
                           info_table.setAttribute('class', 'info_table');
                           for (var q = 0; q < 3; q++) {
@@ -143,7 +129,7 @@ function createInterface() {
                 game_cell.appendChild(left_game_table);
               }
               game_row.appendChild(game_cell);
-            } else if (d == 1) {
+            } else if (d === 1) {
               var right_hints_table = document.createElement('div');
               right_hints_table.setAttribute('class', 'right_hints_table');
               for (var m = 0; m < 1; m++) {
@@ -176,7 +162,7 @@ function createInterface() {
           game_table.appendChild(game_row);
         }
         main_cell.appendChild(game_table);
-      } else if (a == 1) {
+      } else if (a === 1) {
         var bottom_hints_table = document.createElement('div');
         bottom_hints_table.setAttribute('class', 'bottom_hints_table');
         for (var e = 0; e < 2; e++) {
@@ -211,74 +197,24 @@ function fillGameMatrix() {
   var columnRowContent = ['human','house','animal','fruit','sign','alphabet'];
 
   for (var i = 0; i < gameColumn.length; i++) {
-    //console.log(gameColumn[i]);
     var columnGroupRow = gameColumn[i].getElementsByClassName('group_cell');
     for (var j = 0; j < columnGroupRow.length; j++) {
-      columnGroupRow[j].className += ' ' + columnRowContent[j];//.setAttribute('id', columnRowContent[j]);
+      var id = 1;
+      columnGroupRow[j].className += ' ' + columnRowContent[j];
       var tableCells = columnGroupRow[j].getElementsByClassName('cell');
       for (var k = 0; k < tableCells.length; k++) {
-        tableCells[k].setAttribute('id', (columnRowContent[j]) + (k + 1));
+        tableCells[k].setAttribute('id', (columnRowContent[j]) + (id++));
         var content = document.createElement('img');
         content.setAttribute('src','images/' + columnRowContent[j] + '/' + (k + 1) + '.png');
         tableCells[k].appendChild(content);
       }
-      // var tables = document.getElementsByClassName('fruit');
-      // //console.log(tables);
-      //
-      // if (tables != null) {
-      //   //console.log(tables);
-      //   for (var i = 0; i < tables.length; i++) {
-      //     // var innerTables = tables[i].getElementsByClassName('table');
-      //     console.log(tables[i]);
-      //     // for (var j = 0; j < innerTables.length; j++) {
-      //     //   console.log(innerTables);
-      //     // }
-      //   }
-      // }
-      //console.log(columnGroupRow[j]);
     }
   }
 }
 
-// var tables = document.getElementsByClassName('fruit');
-// //console.log(tables);
-//
-// if (tables != null) {
-//   //console.log(tables);
-//   for (var i = 0; i < tables.length; i++) {
-//     var innerTables = tables[i].getElementsByClassName('table');
-//     console.log(tables[i]);
-//     // for (var j = 0; j < innerTables.length; j++) {
-//     //   console.log(innerTables);
-//     // }
-//   }
-// }
-
-// if (tables != null) {
-//     for (var i = 0; i < tables.rows.length; i++) {
-//         for (var j = 0; j < tables.rows[i].cells.length; j++)
-//         tables.rows[i].cells[j].onclick = function () {
-//             tableText(this);
-//         };
-//     }
-// }
-
 function tableText(tableCell) {
     alert(tableCell.innerHTML);
 }
-
-// function fillHumanRow(cells) {
-//   for (int i = 0; i < cells.length; i++) {
-//     var cell = table[i].getElementsByClassName('cell');
-//     var image = document.createElement('img');
-//     image.setAttribute('src', '');
-//     image.setAttribute('id',('human' + (i + 1));
-//     cell.appendChild(image);
-//     cells.appendChild(cell);
-//   }
-//
-//   return cells;
-// }
 
 function fillHouseRow() {
 
@@ -323,3 +259,23 @@ function fillMenu() {
 
 createInterface();
 fillTableWithContent();
+
+document.querySelectorAll('.cell').forEach(function (item, idx) {
+    item.addEventListener('click', function () {
+      var groupCellOfSelected = item.parentElement.parentElement.parentElement;
+      var selectedCell = item;
+      var selectedCellId = item.id;
+
+      if (groupCellOfSelected.getElementsByClassName('cell').length > 1) groupCellOfSelected.replaceChild(selectedCell, groupCellOfSelected.getElementsByClassName('table')[0]);
+      var similarGroupCells = document.getElementsByClassName(groupCellOfSelected.className);
+      for (var i = 0; i < similarGroupCells.length; i++) {
+        var hidingCell = similarGroupCells[i].querySelector('#' + selectedCellId);
+        if (!hidingCell.className.match("^.*disabled$")) {
+            hidingCell.className += ' disabled';
+        }
+      }
+      console.log(similarGroupCells);
+
+      console.log('Clicked ', idx, item.className, item.id, ' of ', groupCellOfSelected);
+    });
+});

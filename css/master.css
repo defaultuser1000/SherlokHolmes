@@ -78,7 +78,7 @@
   display: table-cell;
   padding-left: 2.5px;
   padding-right: 2.5px;
-  /* /*border: 1px solid #CCC;*/ */
+  /*border: 1px solid #CCC;*/
   vertical-align: middle;
 }
 
@@ -180,10 +180,24 @@
 
 .table .row .cell {
   display: table-cell;
-  /* width: 100%;
-  height: 100%; */
   border: 1px solid #CCC;
   vertical-align: middle;
+}
+
+.disabled {
+  opacity: 0.5;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+.row .disabled:hover {
+  cursor: default;
+}
+
+.row .cell:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 .left_game_table {
