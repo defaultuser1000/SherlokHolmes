@@ -1,65 +1,62 @@
 function createInterface() {
-    var body = document.getElementsByTagName('body')[0];
+    const body = document.getElementsByTagName('body')[0];
 
-    var app_table = document.createElement('div');
+    const app_table = document.createElement('div');
     app_table.setAttribute('class', 'app_table');
 
     //Основная таблица
-    var main_table = document.createElement('div');
+    const main_table = document.createElement('div');
     main_table.setAttribute('class', 'main_table');
 
-    for (var a = 0; a < 2; a++) {
-        var main_row = document.createElement('div');
+    for (let a = 0; a < 2; a++) {
+        const main_row = document.createElement('div');
         main_row.setAttribute('class', 'main_row');
-        for (var b = 0; b < 1; b++) {
-            var main_cell = document.createElement('div');
+        for (let b = 0; b < 1; b++) {
+            const main_cell = document.createElement('div');
             main_cell.setAttribute('class', 'main_cell');
             if (a === 0) {
-                var game_table = document.createElement('div');
+                const game_table = document.createElement('div');
                 game_table.setAttribute('class', 'game_table');
-                for (var c = 0; c < 1; c++) {
-                    var game_row = document.createElement('div');
+                for (let c = 0; c < 1; c++) {
+                    const game_row = document.createElement('div');
                     game_row.setAttribute('class', 'game_row');
-                    for (var d = 0; d < 2; d++) {
-                        var game_cell = document.createElement('div');
+                    for (let d = 0; d < 2; d++) {
+                        const game_cell = document.createElement('div');
                         game_cell.setAttribute('class', 'game_cell');
                         if (d === 0) {
-                            var left_game_table = document.createElement('div');
+                            const left_game_table = document.createElement('div');
                             left_game_table.setAttribute('class', 'left_game_table');
-                            for (var g = 0; g < 2; g++) {
-                                var left_game_row = document.createElement('div');
+                            for (let e = 0; e < 2; e++) {
+                                const left_game_row = document.createElement('div');
                                 left_game_row.setAttribute('class', 'left_game_row');
-                                for (var h = 0; h < 1; h++) {
-                                    var left_game_cell = document.createElement('div');
+                                for (let f = 0; f < 1; f++) {
+                                    const left_game_cell = document.createElement('div');
                                     left_game_cell.setAttribute('class', 'left_game_cell');
-                                    if (g === 0) {
-                                        var main_action = document.createElement('div');
+                                    if (e === 0) {
+                                        const main_action = document.createElement('div');
                                         main_action.setAttribute('class', 'main_action');
-                                        for (var i = 0; i < 1; i++) {
-                                            var main_action_row = document.createElement('div');
+                                        for (let g = 0; g < 1; g++) {
+                                            const main_action_row = document.createElement('div');
                                             main_action_row.setAttribute('class', 'main_action_row');
-                                            for (var j = 0; j < 6; j++) {
-                                                var main_action_cell = document.createElement('div');
+                                            for (let h = 0; h < 6; h++) {
+                                                const main_action_cell = document.createElement('div');
                                                 main_action_cell.setAttribute('class', 'main_action_cell');
-                                                var table = document.createElement('div');
+                                                const table = document.createElement('div');
                                                 table.setAttribute('class', 'group_table');
-                                                for (var k = 0; k < 6; k++) {
-                                                    var row = document.createElement('div');
+                                                for (let i = 0; i < 6; i++) {
+                                                    const row = document.createElement('div');
                                                     row.setAttribute('class', 'group_row');
-                                                    for (var l=0; l < 1; l++) {
-                                                        var cell = document.createElement('div');
+                                                    for (let j = 0; j < 1; j++) {
+                                                        const cell = document.createElement('div');
                                                         cell.setAttribute('class', 'group_cell');
-                                                        var table2 = document.createElement('div');
+                                                        const table2 = document.createElement('div');
                                                         table2.setAttribute('class', 'table');
-                                                        // var number = 0;
-                                                        for (var s = 0; s < 2; s++) {
-                                                            var row2 = document.createElement('div');
+                                                        for (let k = 0; k < 2; k++) {
+                                                            const row2 = document.createElement('div');
                                                             row2.setAttribute('class', 'row');
-                                                            for (var t = 0; t < 3; t++) {
-                                                                var cell2 = document.createElement('div');
+                                                            for (let l = 0; l < 3; l++) {
+                                                                const cell2 = document.createElement('div');
                                                                 cell2.setAttribute('class', 'cell');
-                                                                // var text = document.createTextNode(++number);
-                                                                // cell2.appendChild(text);
                                                                 row2.appendChild(cell2);
                                                             }
                                                             table2.appendChild(row2);
@@ -75,40 +72,37 @@ function createInterface() {
                                             main_action.appendChild(main_action_row);
                                             left_game_cell.appendChild(main_action);
                                         }
-                                    } else if (g === 1) {
-                                        var menu = document.createElement('div');
+                                    } else if (e === 1) {
+                                        const menu = document.createElement('div');
                                         menu.setAttribute('class', 'menu');
-                                        for (var o = 0; o < 1; o++) {
-                                            var menu_row = document.createElement('div');
+                                        for (let m = 0; m < 1; m++) {
+                                            const menu_row = document.createElement('div');
                                             menu_row.setAttribute('class', 'menu_row');
-                                            for (var p = 0; p < 2; p++) {
-                                                var menu_cell = document.createElement('div');
+                                            for (let n = 0; n < 2; n++) {
+                                                const menu_cell = document.createElement('div');
                                                 menu_cell.setAttribute('class', 'menu_cell');
-                                                if (p === 0) {
-                                                    var buttons_table = document.createElement('div');
+                                                if (n === 0) {
+                                                    const buttons_table = document.createElement('div');
                                                     buttons_table.setAttribute('class', 'buttons_table');
-                                                    for (var q = 0; q < 2; q++) {
-                                                        var buttons_row = document.createElement('div');
+                                                    for (let o = 0; o < 2; o++) {
+                                                        const buttons_row = document.createElement('div');
                                                         buttons_row.setAttribute('class', 'buttons_row');
-                                                        for (var r = 0; r < 2; r++) {
-                                                            var button_cell = document.createElement('div');
+                                                        for (let p = 0; p < 2; p++) {
+                                                            const button_cell = document.createElement('div');
                                                             button_cell.setAttribute('class', 'buttons_cell');
-                                                            // var buttons_cell = document.createElement('div');
-                                                            // buttons_cell.setAttribute('class', 'buttons_cell');
-                                                            // a.appendChild(buttons_cell);
                                                             buttons_row.appendChild(button_cell);
                                                         }
                                                         buttons_table.appendChild(buttons_row);
                                                     }
                                                     menu_cell.appendChild(buttons_table);
-                                                } else if (p === 1) {
-                                                    var info_table = document.createElement('div');
+                                                } else if (n === 1) {
+                                                    const info_table = document.createElement('div');
                                                     info_table.setAttribute('class', 'info_table');
-                                                    for (var q = 0; q < 3; q++) {
-                                                        var info_row = document.createElement('div');
+                                                    for (let q = 0; q < 3; q++) {
+                                                        const info_row = document.createElement('div');
                                                         info_row.setAttribute('class', 'info_row');
-                                                        for (var r = 0; r < 1; r++) {
-                                                            var info_cell = document.createElement('div');
+                                                        for (let r = 0; r < 1; r++) {
+                                                            const info_cell = document.createElement('div');
                                                             info_cell.setAttribute('class', 'info_cell');
                                                             info_row.appendChild(info_cell);
                                                         }
@@ -129,21 +123,21 @@ function createInterface() {
                             }
                             game_row.appendChild(game_cell);
                         } else if (d === 1) {
-                            var right_hints_table = document.createElement('div');
+                            const right_hints_table = document.createElement('div');
                             right_hints_table.setAttribute('class', 'right_hints_table');
-                            for (var m = 0; m < 1; m++) {
-                                var right_hints_row = document.createElement('div');
+                            for (let s = 0; s < 1; s++) {
+                                const right_hints_row = document.createElement('div');
                                 right_hints_row.setAttribute('class', 'right_hints_row');
-                                for (var n = 0; n < 3; n++) {
-                                    var right_hints_cell = document.createElement('div');
+                                for (let t = 0; t < 3; t++) {
+                                    const right_hints_cell = document.createElement('div');
                                     right_hints_cell.setAttribute('class', 'right_hints_cell');
-                                    var right_hints_column_table = document.createElement('div');
+                                    const right_hints_column_table = document.createElement('div');
                                     right_hints_column_table.setAttribute('class', 'right_hints_column_table');
-                                    for (var o = 0; o < 7; o++) {
-                                        var right_hints_column_row = document.createElement('div');
+                                    for (let u = 0; u < 7; u++) {
+                                        const right_hints_column_row = document.createElement('div');
                                         right_hints_column_row.setAttribute('class', 'right_hints_column_row');
-                                        for (var p = 0; p < 3; p++) {
-                                            var right_hints_column_cell = document.createElement('div');
+                                        for (let v = 0; v < 3; v++) {
+                                            const right_hints_column_cell = document.createElement('div');
                                             right_hints_column_cell.setAttribute('class', 'right_hints_column_cell');
                                             right_hints_column_row.appendChild(right_hints_column_cell);
                                         }
@@ -162,13 +156,13 @@ function createInterface() {
                 }
                 main_cell.appendChild(game_table);
             } else if (a === 1) {
-                var bottom_hints_table = document.createElement('div');
+                const bottom_hints_table = document.createElement('div');
                 bottom_hints_table.setAttribute('class', 'bottom_hints_table');
-                for (var e = 0; e < 2; e++) {
-                    var bottom_hints_row = document.createElement('div');
+                for (let w = 0; w < 2; w++) {
+                    const bottom_hints_row = document.createElement('div');
                     bottom_hints_row.setAttribute('class', 'bottom_hints_row');
-                    for (var f = 0; f < 18; f++) {
-                        var bottom_hints_cell = document.createElement('div');
+                    for (let x = 0; x < 18; x++) {
+                        const bottom_hints_cell = document.createElement('div');
                         bottom_hints_cell.setAttribute('class', 'bottom_hints_cell');
 
                         bottom_hints_row.appendChild(bottom_hints_cell);
@@ -184,6 +178,30 @@ function createInterface() {
     app_table.appendChild(main_table);
 
     body.appendChild(app_table);
+    body.appendChild(createMenuForm());
+
+}
+
+function createMenuForm() {
+    const menuForm = document.createElement('div');
+    menuForm.setAttribute('id','menuForm');
+
+    const background = document.createElement('div');
+    background.setAttribute('class','blurBackground');
+    background.setAttribute('style',"display: none;");
+
+    const closeButton = document.createElement('div');
+    closeButton.setAttribute('class', 'button');
+    closeButton.setAttribute('id','close');
+
+    const spanCloseButton = document.createElement('span');
+    spanCloseButton.innerText = 'Close dat shit!';
+
+    closeButton.appendChild(spanCloseButton);
+    menuForm.appendChild(closeButton);
+    background.appendChild(menuForm);
+
+    return background;
 }
 
 function fillTableWithContent() {
@@ -192,18 +210,18 @@ function fillTableWithContent() {
 }
 
 function fillGameMatrix() {
-    var gameColumn = document.getElementsByClassName('main_action_cell');
-    var columnRowContent = ['human','house','animal','fruit','sign','alphabet'];
+    const gameColumn = document.getElementsByClassName('main_action_cell');
+    const columnRowContent = ['human', 'house', 'animal', 'fruit', 'sign', 'alphabet'];
 
-    for (var i = 0; i < gameColumn.length; i++) {
-        var columnGroupRow = gameColumn[i].getElementsByClassName('group_cell');
-        for (var j = 0; j < columnGroupRow.length; j++) {
-            var id = 1;
+    for (let i = 0; i < gameColumn.length; i++) {
+        const columnGroupRow = gameColumn[i].getElementsByClassName('group_cell');
+        for (let j = 0; j < columnGroupRow.length; j++) {
+            let id = 1;
             columnGroupRow[j].className += ' ' + columnRowContent[j];
-            var tableCells = columnGroupRow[j].getElementsByClassName('cell');
-            for (var k = 0; k < tableCells.length; k++) {
+            const tableCells = columnGroupRow[j].getElementsByClassName('cell');
+            for (let k = 0; k < tableCells.length; k++) {
                 tableCells[k].setAttribute('id', (columnRowContent[j]) + (id++));
-                var content = document.createElement('img');
+                const content = document.createElement('img');
                 content.setAttribute('src','images/' + columnRowContent[j] + '/' + (k + 1) + '.png');
                 tableCells[k].appendChild(content);
             }
@@ -211,70 +229,97 @@ function fillGameMatrix() {
     }
 }
 
-function tableText(tableCell) {
-    alert(tableCell.innerHTML);
-}
-
-function fillHouseRow() {
-
-}
-
-function fillAnimalRow() {
-
-}
-
-function fillCigareteRow() {
-
-}
-
-function fillFruitRow() {
-
-}
-
-function fillAlphabetRow() {
-
-}
-
 function fillMenu() {
-    var menu = document.getElementsByClassName('menu')[0];
+    const menu = document.getElementsByClassName('menu')[0];
 
-    var buttons = menu.getElementsByClassName('buttons_cell');
-    var buttons_text = ['MENU','OTHER CLUES','UNDO','HINT'];
-    for (var i = 0; i < buttons.length; i++) {
-        var text = document.createTextNode(buttons_text[i]);
-        buttons[i].appendChild(text);
+    const buttons = menu.getElementsByClassName('buttons_cell');
+    const buttons_text = ['MENU', 'OTHER CLUES', 'UNDO', 'HINT'];
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].appendChild(document.createTextNode(buttons_text[i]));
     }
 
-    var info = menu.getElementsByClassName('info_cell');
-    var puzzle = 3341;
-    var time = '00:15:25';
-    var player = 'PLAYER 1';
-    var info_text = ['Name: ' + player,'Time: ' + time,'Puzzle: ' + puzzle];
-    for (var i = 0; i < info.length; i++) {
-        var text = document.createTextNode(info_text[i]);
-        info[i].appendChild(text);
+    const info = menu.getElementsByClassName('info_cell');
+    const puzzle = 3341;
+    const time = '00:15:25';
+    const player = 'PLAYER 1';
+    const info_text = ['Name: ' + player, 'Time: ' + time, 'Puzzle: ' + puzzle];
+    for (let j = 0; j < info.length; j++) {
+        info[j].appendChild(document.createTextNode(info_text[j]));
     }
 }
 
 createInterface();
 fillTableWithContent();
+createIdsForButtons();
 
 document.querySelectorAll('.cell').forEach(function (item, idx) {
     item.addEventListener('click', function () {
-        var groupCellOfSelected = item.parentElement.parentElement.parentElement;
-        var selectedCell = item;
-        var selectedCellId = item.id;
+        const groupCellOfSelected = item.parentElement.parentElement.parentElement;
+        const selectedCell = item;
+        const selectedCellId = item.id;
+        let height = item.parentElement.parentElement.clientHeight;
 
-        if (groupCellOfSelected.firstElementChild.className.match('table')) groupCellOfSelected.replaceChild(selectedCell, groupCellOfSelected.getElementsByClassName('table')[0]);
-        var similarGroupCells = document.getElementsByClassName(groupCellOfSelected.className);
-        for (var i = 0; i < similarGroupCells.length; i++) {
-            var hidingCell = similarGroupCells[i].querySelector('#' + selectedCellId);
+        if (groupCellOfSelected.className.match('group_cell')) {
+            selectedCell.className = groupCellOfSelected.className;
+            selectedCell.setAttribute('style','height: ' + height + 'px;');
+            groupCellOfSelected.replaceWith(selectedCell);
+            historyMap.set(selectedCell,groupCellOfSelected);
+        }
+        const similarGroupCells = document.getElementsByClassName(groupCellOfSelected.className);
+        for (let i = 0; i < similarGroupCells.length; i++) {
+            const hidingCell = similarGroupCells[i].querySelector('#' + selectedCellId);
             if (similarGroupCells[i].firstElementChild.className.match('table')) {
                 hidingCell.className += ' disabled';
             }
         }
-        console.log(similarGroupCells);
 
-        console.log('Clicked ', idx, item.className, item.id, ' of ', groupCellOfSelected);
+        // console.log(similarGroupCells);
+        //
+        // console.log('Clicked ', idx, item.className, item.id, ' of ', groupCellOfSelected);
     });
+});
+
+let historyList = new Map();
+let historyMap = new Map();
+
+
+function createIdsForButtons() {
+    const menuButtons = document.getElementsByClassName('buttons_cell');
+    const ids = ['menu','other_clues','undo','hint'];
+    for (let i = 0; i < menuButtons.length; i++) {
+        menuButtons[i].setAttribute('id',ids[i]);
+    }
+}
+
+document.getElementById('menu').addEventListener('click', function(e) {
+    $('.blurBackground').fadeToggle(200);
+    //e.preventDefault();
+});
+
+document.getElementById('other_clues').addEventListener('click', function() {
+    console.log('Clicked other_clues');
+});
+
+document.getElementById('undo').addEventListener('click', function() {
+    let historySize = historyMap.size;
+    let counter = 0;
+    if (historySize > 0) {
+        historyMap.forEach(function(value, key, map) {
+            counter++;
+            //key = historyMap[value];
+            if (counter === historySize) {
+                console.log(map[key]);
+            }
+        });
+    }
+    console.log(historyMap);
+    //console.log(historyMap.get[history.length-1]);
+});
+
+document.getElementById('hint').addEventListener('click', function() {
+    console.log('Clicked hint');
+});
+
+document.getElementById('close').addEventListener('click', function() {
+    $('.blurBackground').fadeToggle(200);
 });
